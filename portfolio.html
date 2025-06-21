@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Hajer Hassine</title>
+  <style>
+    :root {
+      --bleu-principal: #8089f3;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color:#8089f3;
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin: 0.5em 0 1em;
+    }
+
+    nav {
+      margin-top: 1em;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 2em 1.5em;
+      background: white;
+      margin-top: 1.5em;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #a9b0f7;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    .experience-card {
+      display: flex;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 1.5em;
+      overflow: hidden;
+    }
+
+    .experience-card .left {
+      background-color: var(--bleu-principal);
+      color: white;
+      padding: 1.5em;
+      width: 35%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .experience-card .left .date {
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    .experience-card .left .company {
+      font-size: 1.1em;
+      margin-top: 0.5em;
+      text-transform: uppercase;
+    }
+
+    .experience-card .right {
+      width: 65%;
+      padding: 1.5em;
+      font-size: 0.95em;
+      line-height: 1.6em;
+    }
+
+    .contact a {
+      display: block;
+      margin: 0.5em 0;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: var(--bleu-principal);
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+
+    @media screen and (max-width: 768px) {
+      .experience-card {
+        flex-direction: column;
+      }
+      .experience-card .left, .experience-card .right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hajer Hassine</h1>
+  <p>Ingénieure FullStack | Gabès, Tunisie</p>
+  <nav>
+    <a href="#a-propos">À propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#experience">Expériences</a>
+    <a href="#projets">Projets</a>
+    <a href="#formation">Formation</a>
+    <a href="#langues">Langues</a>
+  </nav>
+</header>
+
+<section id="a-propos">
+  <h2>À propos</h2>
+  <p>Diplômée en ingénierie informatique de l’École Supérieure de 
+ l’Ingénierie et des Technologies ESPRIT, je suis passionnée par le web et 
+ les nouvelles technologies. Forte d’une solide formation et d’un esprit 
+ d’équipe remarquable, j’excelle dans la réalisation de projets innovants 
+ et inspirants.</p>
+</section>
+
+<section id="competences">
+  <h2>Compétences Techniques</h2>
+  <ul>
+    <li><strong>Frontend :</strong> Angular, ReactJS, HTML/CSS, TypeScript, Bootstrap</li>
+    <li><strong>Backend :</strong> Java, .NET, Node.js, Symfony, Python</li>
+    <li><strong>Bases de données :</strong> MySQL, PostgreSQL, MongoDB</li>
+    <li><strong>DevOps & Outils :</strong> Docker, Jenkins, SonarQube, GitLab CI, Nexus, Grafana</li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Expérience Professionnelle</h2>
+
+  <div class="experience-card">
+    <div class="left">
+      <div class="date">Mai – Nov 2023</div>
+      <div class="company">Addactis Software</div>
+    </div>
+    <div class="right">
+      Développement de nouvelles fonctionnalités et correctifs dans une solution SaaS d’assurance. Intégration AWS Cognito pour la gestion des utilisateurs. Implémentation d’un pipeline CI/CD.<br>
+      <strong>Technologies :</strong> Angular, .NET, AWS, Docker, PostgreSQL, GitLab.
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="left">
+      <div class="date">Juin – Août 2022</div>
+      <div class="company">NBG Technology</div>
+    </div>
+    <div class="right">
+      Création d’une application de réservation de taxis (F-Uber), développement Angular, APIs, tests et CI/CD.<br>
+      <strong>Technologies :</strong> Angular, .NET, C#, Firebase, GitLab CI.
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="left">
+      <div class="date">Juin – Août 2021</div>
+      <div class="company">SPS</div>
+    </div>
+    <div class="right">
+      Développement complet d’un site e-commerce avec React, Node.js, MongoDB. Ajout de tests unitaires et configuration DevOps.
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="left">
+      <div class="date">Juin – Août 2020</div>
+      <div class="company">Groupe Secil</div>
+    </div>
+    <div class="right">
+      Application de gestion de magasin : participation au backend Spring Boot et frontend Angular.
+    </div>
+  </div>
+</section>
+
+<section id="projets">
+  <h2>Projets Académiques</h2>
+  <ul>
+    <li><strong>CI DevOps :</strong> Maven, Git, Jenkins, Docker, Grafana, Prometheus</li>
+    <li><strong>Microservices Agence de Voyages :</strong> Java, Spring Boot, Angular, MongoDB, Zuul, Eureka</li>
+    <li><strong>Crowdfunding App :</strong> MERN Stack + Python</li>
+    <li><strong>Réservation de Terrains :</strong> JavaFX + MySQL</li>
+  </ul>
+</section>
+
+<section id="formation">
+  <h2>Formation</h2>
+  <ul>
+    <li><strong>Ingénieure Informatique</strong> – ESPRIT, Ariana, 2024</li>
+    <li><strong>Formation Testeur Logiciel</strong> – IHF Gabès, 2025</li>
+    <li><strong>Licence Informatique Appliquée</strong> – ISG Gabès, 2020</li>
+  </ul>
+</section>
+
+<section id="langues">
+  <h2>Langues</h2>
+  <ul>
+    <li>Français – ★★★★★</li>
+    <li>Anglais – ★★★★★</li>
+    <li>Arabe – ★★★★★</li>
+  </ul>
+</section>
+
+<section class="contact" >
+  <h2>Contact</h2>
+  <a href="mailto:hajer.hassine@outlook.com">📧 hajer.hassine@outlook.com</a>
+  <a href="https://www.linkedin.com/in/hajer-hassine-86b919184/" target="_blank">🔗 LinkedIn</a>
+  <a href="https://github.com/hajerhassine" target="_blank">💻 GitHub</a>
+  <a href="https://wa.me/21626380257" target="_blank">📱 WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2025 Hajer Hassine | Portfolio personnel</p>
+</footer>
+
+</body>
+</html>
